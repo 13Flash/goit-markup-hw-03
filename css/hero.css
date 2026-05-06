@@ -1,4 +1,8 @@
+
+
 .hero-body {
+  padding: 120px 0;
+  text-align: center;
   background-color: #2e2f42;
 }
 
@@ -12,16 +16,38 @@
 }
 
 .hero-button {
+  /*  размер кнопки */ 
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+
+/* центр кнопки */
+  display: block;
+  margin: 0 auto;
+  /* text-align: center; */
+
+  /* центр текста внутри */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*  не даёт переноситься тексту */
+  white-space: nowrap;
+
+  /* текст */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+
   background-color: #4d5ae5;
   cursor: pointer;
+
 }
+
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
-}
+} 
