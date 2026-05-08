@@ -1,71 +1,50 @@
-/* ===== ОБЩИЕ СТИЛИ САЙТА ===== */
 body {
-  font-family: 'Roboto', sans-serif; /* основной шрифт сайта */
-  color: #2e2f42; /* основной цвет текста */
-  line-height: 1.5; /* межстрочный интервал */
-  letter-spacing: 0.02em; /* расстояние между буквами */
-  background-color: #fff; /* фон страницы */
+  font-family: 'Roboto', sans-serif;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #fff
 }
 
-/* ===== СБРОС СТИЛЕЙ ===== */
-/* убираем стандартные отступы браузера */
-h1, h2, h3, h4, h5, h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* убираем точки у списков */
 ul,
 ol {
   list-style: none;
 }
 
-/* ссылки без подчеркивания */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* адрес (email/телефон) без наклона */
 address {
   font-style: normal;
 }
 
-/* ===== СОСТОЯНИЯ ССЫЛОК ===== */
-/* эффект при наведении и фокусе */
 .link:hover,
 .link:focus {
   color: #4d5ae5;
 }
 
-/* ===== ЦВЕТА ===== */
-/* акцентный цвет (синий из макета) */
 .color-accent {
   color: #4d5ae5;
 }
 
-/* ===== ЛОГОТИП ===== */
 .logo {
-  font-family: 'Raleway', sans-serif; /* отдельный шрифт */
-  font-weight: 700; /* жирный */
-  font-size: 24px; /* размер */
-  line-height: 1.333; /* высота строки */
-  letter-spacing: 0.03em; /* расстояние между буквами */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.03em;
 }
 
-/* ===== ЗАГОЛОВКИ СЕКЦИЙ ===== */
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 111%;
   letter-spacing: 0.02em;
-  text-align: center; /* центрируем заголовок */
-  margin-bottom: 72px; /* отступ снизу */
+  text-align: center;
 }
 
-/* ===== ЗАГОЛОВКИ БЛОКОВ ===== */
 .block-title {
   font-weight: 500;
   font-size: 20px;
@@ -73,38 +52,9 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* ===== ТЕКСТ БЛОКОВ ===== */
 .block-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-/* ===== КОНТЕЙНЕР (центровка контента) ===== */
-.container {
-  max-width: 1158px; /* ограничение сверху */
-  width: 100%; /* ширина макета */
-  margin: 0 auto; /* центрирование */
-  padding: 0 15px; /* отступы слева и справа */
-}
-
-/* ===== СЕКЦИИ САЙТА ===== */
-.section {
-  padding-top: 120px; /* отступ сверху */
-  padding-bottom: 120px; /* отступ снизу */
-}
-
-/* ===== СКРЫТЫЙ ТЕКСТ (для доступности) ===== */
-/* используется для скрытых заголовков */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
 }
