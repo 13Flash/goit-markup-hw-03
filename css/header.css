@@ -1,4 +1,30 @@
+.header-container {
+  background-color: aqua;
+    display: flex; /* Устанавливает элемент как флекс-контейнер, позволяя его дочерним элементам располагаться в строку или столбец. */
+    justify-content: space-between; /* 🔹 Размещает элементы внутри контейнера с равными промежутками между ними. */
+    align-items: center;
+  /* 🔹 Выравнивание по вертикали */
+  }
+
 .navigation {
-  font-weight: 500;
-  font-size: 16px;
+
+  font-weight: 500; /* 🔹 Толщина текста
+  500 = medium Текст будет чуть жирнее обычного */
+
+  font-size: 16px; /* 🔹 Размер шрифта 16px = 16 пикселей Стандартный размер текста */
+  line-height: 150%; /* 🔹 Высота строки 150% = 1.5 Увеличивает расстояние между строками на 50% от размера шрифта */
+}
+   
+.navigation-list {
+    display: flex; 
+    gap: 40px; /* 🔹 Устанавливает промежуток между элементами в 20 пикселей. */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.address-list {
+    display: flex; 
+    gap: 40px; 
 }

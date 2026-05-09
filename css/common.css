@@ -3,7 +3,7 @@ body {
   color: #2e2f42;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background-color: #fff
+  background-color: #fff;
 }
 
 ul,
@@ -57,4 +57,12 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.container {
+    width: 1158px;    
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
