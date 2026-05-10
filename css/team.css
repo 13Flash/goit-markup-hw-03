@@ -2,8 +2,10 @@
   background-color: #f4f4fd;
 }
 
-.team li {
-  background-color: #ffffff;
+.team-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .team .block-title,

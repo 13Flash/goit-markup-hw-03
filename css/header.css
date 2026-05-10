@@ -1,30 +1,39 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
-  background-color: aqua;
-    display: flex; /* Устанавливает элемент как флекс-контейнер, позволяя его дочерним элементам располагаться в строку или столбец. */
-    justify-content: space-between; /* 🔹 Размещает элементы внутри контейнера с равными промежутками между ними. */
+    display: flex; 
     align-items: center;
   /* 🔹 Выравнивание по вертикали */
   }
 
 .navigation {
+  
+  flex-grow: 1; 🔹 Позволяет навигации занимать все доступное пространство
 
   font-weight: 500; /* 🔹 Толщина текста
   500 = medium Текст будет чуть жирнее обычного */
 
   font-size: 16px; /* 🔹 Размер шрифта 16px = 16 пикселей Стандартный размер текста */
   line-height: 150%; /* 🔹 Высота строки 150% = 1.5 Увеличивает расстояние между строками на 50% от размера шрифта */
+  padding-left: 76px;
+  
 }
    
 .navigation-list {
     display: flex; 
-    gap: 40px; /* 🔹 Устанавливает промежуток между элементами в 20 пикселей. */
+    gap: 40px; /* 🔹 Устанавливает промежуток между элементами */
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0.02em;
+    
 }
 
 .address-list {
     display: flex; 
     gap: 40px; 
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+

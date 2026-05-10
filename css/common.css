@@ -18,6 +18,7 @@ a {
 
 address {
   font-style: normal;
+  color: #434455;
 }
 
 .link:hover,
@@ -65,4 +66,22 @@ address {
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
 }
