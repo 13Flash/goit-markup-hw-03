@@ -49,26 +49,15 @@
 }
 
 .hero-button {
-  font-weight: 500;
-  /* 🔹 Толщина текста medium */
-
-  font-size: 16px;
-  /* 🔹 Размер текста */
-
-  line-height: 1.5;
-  /* 🔹 Высота строки */
-
-  letter-spacing: 0.04em;
-  /* 🔹 Расстояние между буквами */
-
-  color: #ffffff;
-  /* 🔹 Цвет текста */
-
-  background-color: #4d5ae5;
-  /* 🔹 Цвет кнопки */
-
-  cursor: pointer;
-  /* 🔹 Курсор становится рукой */
+  padding: 16px 32px;
+  border: none;
+  font-weight: 500; /* 🔹 Толщина текста medium */
+  font-size: 16px; /* 🔹 Размер текста */
+  line-height: 1.5; /* 🔹 Высота строки */
+  letter-spacing: 0.04em;/* 🔹 Расстояние между буквами */
+  color: #ffffff; /* 🔹 Цвет текста */
+  background-color: #4d5ae5; /* 🔹 Цвет кнопки */
+  cursor: pointer; /* 🔹 Курсор становится рукой */
 }
 
 .hero-button:hover,
