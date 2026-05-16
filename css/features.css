@@ -1,3 +1,10 @@
+.features-section {
+  background-color: #ffffff;
+  padding-top: 120px;
+  /* 🔹 Внутренний отступ сверху */
+  padding-bottom: 120px;
+  🔹 Внутренний отступ снизу
+}
 .block-title {
   margin-bottom: 8px;
 }
@@ -11,7 +18,7 @@
   flex-direction: row;
   column-gap: 24px;
   justify-content: center;
-} */
+} 
 
 .features-item {
   width: calc((100% - 72px) / 4);

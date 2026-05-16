@@ -1,87 +1,98 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  background-color: #fff;
+  font-family: 'Roboto', sans-serif; /* 🔹 задаёт основной шрифт сайта */
+  color: #2e2f42; /* 🔹 цвет всего текста на странице */
+  line-height: 1.5; /* 🔹 расстояние между строками текста */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
+  background-color: #fff; /* 🔹 цвет фона страницы (белый) */
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style: none; /* 🔹 убирает маркеры у списков */
+  margin: 0; /* 🔹 убирает внешние отступы */
+  padding: 0; /* 🔹 убирает внутренние отступы */
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* 🔹 убирает подчёркивание ссылок */
+  color: inherit; /* 🔹 ссылка наследует цвет текста */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; /* 🔹 убирает стандартные отступы сверху/снизу */
+  padding: 0; /* 🔹 убирает внутренние отступы */
 }
 
 address {
-  font-style: normal;
-  color: #434455;
+  font-style: normal; /* 🔹 убирает курсив у адреса */
+  color: #434455; /* 🔹 задаёт серый цвет текста */
 }
 
 .link:hover,
 .link:focus {
-  color: #4d5ae5;
+  color: #4d5ae5; /* 🔹 меняет цвет ссылки при наведении/фокусе */
 }
 
 .color-accent {
-  color: #4d5ae5;
+  color: #4d5ae5; /* 🔹 акцентный синий цвет */
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.33333;
-  letter-spacing: 0.03em;
+  font-family: 'Raleway', sans-serif; /* 🔹 шрифт логотипа */
+  font-weight: 700; /* 🔹 жирный текст */
+  font-size: 24px; /* 🔹 размер текста логотипа */
+  line-height: 1.33333; /* 🔹 высота строки */
+  letter-spacing: 0.03em; /* 🔹 расстояние между буквами */
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-align: center;
+  font-weight: 700; /* 🔹 жирный заголовок */
+  font-size: 36px; /* 🔹 размер заголовка */
+  line-height: 1.11; /* 🔹 высота строки заголовка */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
+  text-align: center; /* 🔹 центрирует текст */
+  margin-bottom: 75px; /* 🔹 отступ снизу */
 }
 
 .block-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 500; /* 🔹 средняя жирность */
+  font-size: 20px; /* 🔹 размер текста */
+  line-height: 1.2; /* 🔹 высота строки */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
 }
 
 .block-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: 400; /* 🔹 обычная толщина текста */
+  font-size: 16px; /* 🔹 размер текста */
+  line-height: 1.5; /* 🔹 высота строки */
+  letter-spacing: 0.02em; /* 🔹 расстояние между буквами */
 }
 
 .container {
-    width: 1158px;    
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1158px; /* 🔹 максимальная ширина контента */
+  padding-left: 15px; /* 🔹 внутренний отступ слева */
+  padding-right: 15px; /* 🔹 внутренний отступ справа */
+  margin-left: auto; /* 🔹 центрирование контейнера */
+  margin-right: auto; /* 🔹 центрирование контейнера */
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 120px; /* 🔹 отступ сверху секции */
+  padding-bottom: 120px; /* 🔹 отступ снизу секции */
 }
 
 .sr-only {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  margin: -1px;
+  position: absolute; /* 🔹 убирает элемент из потока */
+  white-space: nowrap; /* 🔹 запрещает перенос строк */
+  width: 1px; /* 🔹 минимальная ширина */
+  height: 1px; /* 🔹 минимальная высота */
+  overflow: hidden; /* 🔹 скрывает лишнее */
+  border: 0; /* 🔹 убирает рамку */
+  padding: 0; /* 🔹 убирает отступы */
+  clip: rect(0 0 0 0); /* 🔹 полностью скрывает элемент */
+  clip-path: inset(100%); /* 🔹 дополнительное скрытие */
+  margin: -1px; /* 🔹 убирает влияние на layout */
 }
