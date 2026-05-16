@@ -1,39 +1,31 @@
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc; /* 🔹 нижняя линия у хедера */
 }
 
 .header-container {
-    display: flex; 
-    align-items: center;
-  /* 🔹 Выравнивание по вертикали */
-  }
+  display: flex; /* 🔹 включает flex-раскладку */
+  align-items: center; /* 🔹 выравнивает элементы по вертикали */
+}
 
 .navigation {
-  
-  flex-grow: 1; 🔹 Позволяет навигации занимать все доступное пространство
-
-  font-weight: 500; /* 🔹 Толщина текста
-  500 = medium Текст будет чуть жирнее обычного */
-
-  font-size: 16px; /* 🔹 Размер шрифта 16px = 16 пикселей Стандартный размер текста */
-  line-height: 150%; /* 🔹 Высота строки 150% = 1.5 Увеличивает расстояние между строками на 50% от размера шрифта */
-  padding-left: 76px;
-  
+  flex-grow: 1; /* 🔹 навигация занимает всё свободное пространство */
+  font-weight: 500; /* 🔹 средняя жирность текста */
+  font-size: 16px; /* 🔹 размер шрифта */
+  line-height: 1.5; /* 🔹 высота строки */
+  padding-left: 76px; /* 🔹 отступ слева от логотипа */
 }
-   
+
 .navigation-list {
-    display: flex; 
-    gap: 40px; /* 🔹 Устанавливает промежуток между элементами */
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    
+  display: flex; /* 🔹 размещает пункты в ряд */
+  gap: 40px; /* 🔹 расстояние между пунктами меню */
+  font-weight: 400; /* 🔹 нормальная жирность */
+  font-size: 16px; /* 🔹 размер текста */
+  line-height: 1.5; /* 🔹 высота строки */
 }
 
 .address-list {
-    display: flex; 
-    gap: 40px; 
-    padding-top: 24px;
-    padding-bottom: 24px;
+  display: flex; /* 🔹 размещает контакты в ряд */
+  gap: 40px; /* 🔹 расстояние между контактами */
+  padding-top: 24px; /* 🔹 верхний отступ */
+  padding-bottom: 24px; /* 🔹 нижний отступ */
 }
-
