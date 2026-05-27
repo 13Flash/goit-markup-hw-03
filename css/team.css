@@ -1,29 +1,43 @@
 .team {
-  background-color: #f4f4fd; /* 🔹 фон секции */
+  background-color: #f4f4fd; /* фон всей секции команды */
 }
 
 .team-list {
-  display: flex; /* 🔹 в одну строку */
-  gap: 24px; /* 🔹 расстояние между карточками */
-  justify-content: center; /* 🔹 центрирование */
-  margin: 0; /* 🔹 убрать отступ */
-  padding: 0; /* 🔹 убрать отступ */
-  list-style: none; /* 🔹 убрать точки */
+  display: flex; /* размещает карточки в ряд */
+  gap: 24px; /* расстояние между карточками */
+  justify-content: center; /* центрирует весь ряд */
+  margin: 0; /* убирает стандартный отступ ul */
+  padding: 0; /* убирает внутренний отступ ul */
+  list-style: none; /* убирает точки списка */
 }
 
 .team-card {
-  background-color: #ffffff; 🔹 белый фон
-  display: flex;
-  flex-direction: column; /* 🔹 колонка */
-  max-width: 264px; /* 🔹 ширина карточки */
-  border-radius: 0 0 4px 4px; /* 🔹 скругление снизу */
+  background-color: #ffffff; /* белый фон карточки */
+  width: 264px; /* фиксированная ширина карточки */
+  display: flex; /* включает flex внутри карточки */
+  flex-direction: column; /* располагает элементы сверху вниз */
+  border-radius: 0 0 4px 4px; /* скругление снизу */
+  overflow: hidden; /* обрезает лишнее внутри (картинка и т.п.) */
+}
+
+.team-card img {
+  display: block; /* убирает нижний зазор у изображения */
 }
 
 .team-card-content {
-  padding: 32px 0; /* 🔹 внутренний отступ */
-  text-align: center; /* 🔹 центр текста */
+  padding: 32px 16px; /* вертикальные и горизонтальные отступы */
+  text-align: center; /* центрирует текст */
 }
 
-.team .block-text {
-  color: #434455; /* 🔹 серый текст */
+.block-title {
+  margin: 0 0 8px; /* убирает дефолт + делает отступ до p */
+}
+
+.block-text {
+  margin: 0; /* убирает стандартный margin */
+  color: #434455; /* серый цвет текста */
+}
+
+.section-title {
+  margin-bottom: 72px; /* расстояние до списка карточек */
 }

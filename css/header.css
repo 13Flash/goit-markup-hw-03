@@ -1,31 +1,69 @@
 .header {
-  border-bottom: 1px solid #e7e9fc; /* 🔹 нижняя линия у хедера */
+  border-bottom: 1px solid #e7e9fc; /* 🔹 линия снизу */
 }
 
 .header-container {
-  display: flex; /* 🔹 включает flex-раскладку */
-  align-items: center; /* 🔹 выравнивает элементы по вертикали */
+  display: flex; /* 🔹 flex-раскладка */
+  align-items: center; /* 🔹 выравнивание по центру */
 }
 
 .navigation {
-  flex-grow: 1; /* 🔹 навигация занимает всё свободное пространство */
-  font-weight: 500; /* 🔹 средняя жирность текста */
-  font-size: 16px; /* 🔹 размер шрифта */
-  line-height: 1.5; /* 🔹 высота строки */
-  padding-left: 76px; /* 🔹 отступ слева от логотипа */
+  flex-grow: 1; /* 🔹 занимает всё пространство */
+  padding-left: 76px; /* 🔹 отступ от логотипа */
 }
 
 .navigation-list {
-  display: flex; /* 🔹 размещает пункты в ряд */
-  gap: 40px; /* 🔹 расстояние между пунктами меню */
-  font-weight: 400; /* 🔹 нормальная жирность */
+  display: flex; /* 🔹 пункты в ряд */
+  gap: 40px; /* 🔹 расстояние между пунктами */
+  margin: 0; /* 🔹 убираем дефолт */
+  padding: 0; /* 🔹 убираем дефолт */
+  list-style: none; /* 🔹 убираем маркеры */
+}
+
+/* отступы делаем у ссылок, а не у контейнера */
+.nav-link,
+.nav-Features {
+  display: block; /* 🔹 увеличивает кликабельную область */
+  padding-top: 24px; /* 🔹 вертикальный отступ */
+  padding-bottom: 24px; /* 🔹 вертикальный отступ */
+
   font-size: 16px; /* 🔹 размер текста */
   line-height: 1.5; /* 🔹 высота строки */
+  font-weight: 500; /* 🔹 жирность */
+  color: #2e2f42; /* 🔹 цвет текста */
+
+  text-decoration: none; /* 🔹 убираем подчёркивание */
+
+  transition: color 250ms; /* 🔹 плавный hover */
+}
+
+/* 🔹 hover/focus состояние */
+.nav-link:hover,
+.nav-link:focus,
+.nav-Features:hover,
+.nav-Features:focus {
+  color: #404bbf;
 }
 
 .address-list {
-  display: flex; /* 🔹 размещает контакты в ряд */
-  gap: 40px; /* 🔹 расстояние между контактами */
-  padding-top: 24px; /* 🔹 верхний отступ */
-  padding-bottom: 24px; /* 🔹 нижний отступ */
+  display: flex; /* 🔹 контакты в ряд */
+  gap: 40px; /* 🔹 расстояние */
+  margin: 0; /* 🔹 убираем дефолт */
+  padding: 0; /* 🔹 ❌ FIX: убрали padding отсюда */
+  list-style: none; /* 🔹 убрали маркеры */
+}
+
+.address-list a {
+  display: block; /* 🔹 увеличивает кликабельную зону */
+  padding-top: 24px; /* 🔹 вертикальный отступ */
+  padding-bottom: 24px; /* 🔹 вертикальный отступ */
+  color: #434455; /* 🔹 цвет контактов */
+  text-decoration: none; /* 🔹 без подчёркивания */
+  transition: color 250ms; /* 🔹 плавный hover */
+}
+
+
+.address-list a:hover,
+.address-list a:focus {
+  color: #404bbf;
 }

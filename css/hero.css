@@ -13,13 +13,10 @@
 
   display: flex;
   /* 🔹 Включаем Flexbox */
-
   flex-direction: column;
   /* 🔹 Элементы становятся в колонку (сверху вниз) */
-
   align-items: center;
   /* 🔹 Выравнивание элементов по центру по горизонтали */
-
   row-gap: 48px;
   /* 🔹 Расстояние между элементами по вертикали */
 
@@ -28,7 +25,6 @@
 .hero-title {
   font-weight: 700;
   /* 🔹 Жирный текст (bold) */
-
   font-size: 56px;
   /* 🔹 Размер текста */
 
@@ -58,6 +54,7 @@
   color: #ffffff; /* 🔹 Цвет текста */
   background-color: #4d5ae5; /* 🔹 Цвет кнопки */
   cursor: pointer; /* 🔹 Курсор становится рукой */
+  border-radius: 4px; /* 🔹 Скругление углов кнопки */
 }
 
 .hero-button:hover,

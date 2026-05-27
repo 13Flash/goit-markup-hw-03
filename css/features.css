@@ -1,22 +1,38 @@
 .features-section {
-  background-color: #ffffff; /* 🔹 белый фон секции */
-  padding-top: 120px; /* 🔹 отступ сверху внутри секции */
-  padding-bottom: 120px; /* 🔹 отступ снизу внутри секции */
-}
-
-.block-title {
-  margin-bottom: 8px; /* 🔹 расстояние между заголовком и текстом */
-}
-
-.block-text {
-  color: #434455; /* 🔹 серый цвет текста */
+  background-color: #ffffff; /* фон секции белый */
+  padding-top: 120px; /* отступ сверху */
+  padding-bottom: 120px; /* отступ снизу */
 }
 
 .features-list {
-  display: flex; /* 🔹 делает элементы в одну линию */
-  gap: 24px; /* 🔹 расстояние между элементами */
+  display: flex; /* элементы в ряд */
+  gap: 24px; /* расстояние между карточками */
+  margin: 0; /* убираем дефолтный отступ */
+  padding: 0; /* убираем дефолтный padding */
+  list-style: none; /* убираем точки списка */
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4); /* 🔹 4 колонки с учётом отступов */
+  width: calc((100% - 72px) / 4); /* 4 колонки с учетом gap */
+}
+
+/* заголовок */
+.features-title {
+  font-weight: 500; /* средняя жирность */
+  font-size: 20px; /* размер заголовка */
+  line-height: 1.2; /* плотность строк */
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  color: #2e2f42; /* темный текст */
+
+  margin: 0 0 8px; /* 🔹 отступ вниз до p (ВАЖНО) */
+}
+
+/* текст */
+.features-text {
+  font-size: 16px; /* обычный текст */
+  line-height: 1.5; /* читаемость */
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  color: #434455; /* серый текст */
+
+  margin: 0; /* убираем стандартные отступы */
 }
