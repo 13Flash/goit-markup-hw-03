@@ -1,69 +1,69 @@
 .header {
-  border-bottom: 1px solid #e7e9fc; /* 🔹 линия снизу */
+  border-bottom: 1px solid #e7e9fc; /* линия снизу хедера */
 }
 
 .header-container {
-  display: flex; /* 🔹 flex-раскладка */
-  align-items: center; /* 🔹 выравнивание по центру */
+  display: flex; /* выстраиваем элементы в ряд */
+  align-items: center; /* вертикальное выравнивание */
 }
 
 .navigation {
-  flex-grow: 1; /* 🔹 занимает всё пространство */
-  padding-left: 76px; /* 🔹 отступ от логотипа */
+  flex-grow: 1; /* занимает всё свободное пространство */
+  padding-left: 76px; /* отступ от логотипа */
 }
 
 .navigation-list {
-  display: flex; /* 🔹 пункты в ряд */
-  gap: 40px; /* 🔹 расстояние между пунктами */
-  margin: 0; /* 🔹 убираем дефолт */
-  padding: 0; /* 🔹 убираем дефолт */
-  list-style: none; /* 🔹 убираем маркеры */
+  display: flex; /* горизонтальное меню */
+  gap: 40px; /* расстояние между пунктами */
+  margin: 0; /* убираем дефолтный отступ */
+  padding: 0; /* убираем внутренний отступ */
+  list-style: none; /* убираем маркеры */
 }
 
-/* отступы делаем у ссылок, а не у контейнера */
+/* ссылки меню — отступы только здесь */
 .nav-link,
 .nav-Features {
-  display: block; /* 🔹 увеличивает кликабельную область */
-  padding-top: 24px; /* 🔹 вертикальный отступ */
-  padding-bottom: 24px; /* 🔹 вертикальный отступ */
+  display: block; /* увеличивает кликабельную область */
+  padding: 24px 0; /* ВАЖНО: вертикальный ритм */
 
-  font-size: 16px; /* 🔹 размер текста */
-  line-height: 1.5; /* 🔹 высота строки */
-  font-weight: 500; /* 🔹 жирность */
-  color: #2e2f42; /* 🔹 цвет текста */
+  font-size: 16px; /* размер текста */
+  line-height: 1.5; /* читаемость */
+  font-weight: 500; /* средняя жирность */
+  color: #2e2f42; /* цвет текста */
 
-  text-decoration: none; /* 🔹 убираем подчёркивание */
-
-  transition: color 250ms; /* 🔹 плавный hover */
+  text-decoration: none; /* убираем подчёркивание */
+  transition: color 250ms; /* плавный hover */
 }
 
-/* 🔹 hover/focus состояние */
+/* hover эффект */
 .nav-link:hover,
 .nav-link:focus,
 .nav-Features:hover,
 .nav-Features:focus {
-  color: #404bbf;
+  color: #404bbf; /* активный цвет */
 }
 
+/* список контактов — только структура */
 .address-list {
-  display: flex; /* 🔹 контакты в ряд */
-  gap: 40px; /* 🔹 расстояние */
-  margin: 0; /* 🔹 убираем дефолт */
-  padding: 0; /* 🔹 ❌ FIX: убрали padding отсюда */
-  list-style: none; /* 🔹 убрали маркеры */
+  display: flex; /* в ряд */
+  gap: 40px; /* расстояние */
+  margin: 0; /* убираем дефолт */
+  padding: 0; /* ВАЖНО: не даём отступы тут */
+  list-style: none; /* убираем маркеры */
 }
 
+/* контакты — отступы на ссылках */
 .address-list a {
-  display: block; /* 🔹 увеличивает кликабельную зону */
-  padding-top: 24px; /* 🔹 вертикальный отступ */
-  padding-bottom: 24px; /* 🔹 вертикальный отступ */
-  color: #434455; /* 🔹 цвет контактов */
-  text-decoration: none; /* 🔹 без подчёркивания */
-  transition: color 250ms; /* 🔹 плавный hover */
+  display: block; /* увеличивает кликабельную зону */
+  padding: 24px 0; /* ВАЖНО: вертикальный ритм */
+
+  color: #434455; /* цвет текста */
+  text-decoration: none; /* без подчёркивания */
+  transition: color 250ms; /* плавный hover */
 }
 
-
+/* hover контактов */
 .address-list a:hover,
 .address-list a:focus {
-  color: #404bbf;
+  color: #404bbf; /* цвет при наведении */
 }

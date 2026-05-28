@@ -1,38 +1,40 @@
 .features-section {
-  background-color: #ffffff; /* фон секции белый */
-  padding-top: 120px; /* отступ сверху */
-  padding-bottom: 120px; /* отступ снизу */
+  background-color: #ffffff; /* фон секции */
+  padding-top: 120px; /* верхний отступ секции */
+  padding-bottom: 120px; /* нижний отступ секции */
 }
 
+/* список карточек */
 .features-list {
-  display: flex; /* элементы в ряд */
+  display: flex; /* в ряд */
   gap: 24px; /* расстояние между карточками */
-  margin: 0; /* убираем дефолтный отступ */
-  padding: 0; /* убираем дефолтный padding */
-  list-style: none; /* убираем точки списка */
+  margin: 0; /* убираем стандартный отступ */
+  padding: 0; /* убираем внутренний отступ */
+  list-style: none; /* убираем маркеры */
 }
 
+/* одна карточка */
 .features-item {
-  width: calc((100% - 72px) / 4); /* 4 колонки с учетом gap */
+  width: calc((100% - 72px) / 4); /* 4 равные колонки */
 }
 
-/* заголовок */
+/* заголовок feature */
 .features-title {
   font-weight: 500; /* средняя жирность */
-  font-size: 20px; /* размер заголовка */
+  font-size: 20px; /* размер текста */
   line-height: 1.2; /* плотность строк */
   letter-spacing: 0.02em; /* расстояние между буквами */
-  color: #2e2f42; /* темный текст */
+  color: #2e2f42; /* основной цвет */
 
-  margin: 0 0 8px; /* 🔹 отступ вниз до p (ВАЖНО) */
+  margin: 0 0 8px; /* создаёт расстояние до p */
 }
 
-/* текст */
+/* текст feature */
 .features-text {
-  font-size: 16px; /* обычный текст */
+  font-size: 16px; /* размер текста */
   line-height: 1.5; /* читаемость */
-  letter-spacing: 0.02em; /* расстояние между буквами */
-  color: #434455; /* серый текст */
+  letter-spacing: 0.02em; /* межбуквенный интервал */
+  color: #434455; /* серый цвет */
 
-  margin: 0; /* убираем стандартные отступы */
+  margin: 0; /* убираем дефолтные отступы */
 }
